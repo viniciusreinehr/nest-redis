@@ -1,0 +1,57 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/nest-redis/src",
+  "monorepo": true,
+  "root": "apps/nest-redis",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/nest-redis/tsconfig.app.json"
+  },
+  "projects": {
+    "nest-redis": {
+      "type": "application",
+      "root": "apps/nest-redis",
+      "entryFile": "main",
+      "sourceRoot": "apps/nest-redis/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/nest-redis/tsconfig.app.json"
+      }
+    },
+    "first": {
+      "type": "application",
+      "root": "apps/first",
+      "entryFile": "main",
+      "sourceRoot": "apps/first/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/first/tsconfig.app.json"
+      }
+    },
+    "second": {
+      "type": "application",
+      "root": "apps/second",
+      "entryFile": "main",
+      "sourceRoot": "apps/second/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/second/tsconfig.app.json"
+      }
+    },
+    "third": {
+      "type": "application",
+      "root": "apps/third",
+      "entryFile": "main",
+      "sourceRoot": "apps/third/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/third/tsconfig.app.json"
+      }
+    },
+    "ms-pattern": {
+      "type": "library",
+      "root": "libs/ms-pattern",
+      "entryFile": "index",
+      "sourceRoot": "libs/ms-pattern/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/ms-pattern/tsconfig.lib.json"
+      }
+    }
+  }
+}
